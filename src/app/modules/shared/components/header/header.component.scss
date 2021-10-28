@@ -1,0 +1,13 @@
+.header {
+    justify-content: space-between;
+}
+
+.left-item, .right-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-item .logo {
+    margin: 0 10px 0 0;
+}

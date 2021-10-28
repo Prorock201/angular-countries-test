@@ -1,0 +1,26 @@
+<div class="card-info-wrapper">
+    <div class="back-link-wrapper">
+        <a mat-icon-button
+            class="back-link"
+            color="primary"
+            routerLink="/countries"
+          >
+          <mat-icon>keyboard_backspace</mat-icon>
+          <span>Go to country list</span>
+        </a>
+    </div>
+    <mat-card class="example-card">
+        <mat-card-header>
+        <div mat-card-avatar>
+            <mat-icon color="primary">language</mat-icon>
+        </div>
+        <mat-card-title><strong>{{ country?.name }}</strong></mat-card-title>
+        <mat-card-subtitle><strong>{{ country?.region }}</strong></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{ country?.flagUrl }}" alt="{{ country?.name }}">
+        <mat-card-content>
+        <p><strong>Languages:</strong> {{ country?.languages }}</p>
+        <p><strong>Capital:</strong> {{ country?.capital }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>
